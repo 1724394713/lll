@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左侧固定，右侧自适应1</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      min-width: 700px;
+      height: 300px;
+    }
+    .left{
+      width: 200px;
+      height: 300px;
+      background: pink;
+      float: left;
+    }
+    .right{
+      height: 300px;
+      margin-left: 200px;
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      方案一：
+
+      左边左浮动，右边加个margin-left
+    </div>
+  </div>
+</body>
+</html>

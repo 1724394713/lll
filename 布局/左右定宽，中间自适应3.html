@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右定宽，中间自适应3</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      min-width: 700px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .left{
+      width: 200px;
+      height: 300px;
+      background: paleturquoise;
+      float: left;
+    }
+    .right{
+      width: 200px;
+      height: 300px;
+      background: paleturquoise;
+      float: right;
+    }
+    /*.middle{*/
+      /*width: 100%;*/
+    /*}*/
+    /*.middle-inner{*/
+      /*height: 300px;*/
+      /*background: pink;*/
+      /*margin: 0 200px;*/
+    /*}*/
+
+    .middle{
+      height: 300px;
+      background: pink;
+      margin: 0 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+    <!--<div class="middle">-->
+      <!--<div class="middle-inner">-->
+        <!--中间-->
+        <!--方案三：-->
+
+        <!--左边使用float:left 右边用float:right，html代码中的中间部分要放后边-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="middle">
+        中间
+        方案三：
+
+        左边使用float:left 右边用float:right，html代码中的中间部分要放后边
+      </div>
+  </div>
+</body>
+</html>

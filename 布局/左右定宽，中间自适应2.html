@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右定宽，中间自适应2</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      min-width: 700px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .left{
+      width: 200px;
+      height: 300px;
+      background: paleturquoise;
+      float: left;
+      margin-left: -100%;
+    }
+    .right{
+      width: 200px;
+      height: 300px;
+      background: paleturquoise;
+      float: left;
+      margin-left: -200px;
+    }
+    .middle{
+      float: left;
+      width: 100%;
+    }
+    .middle-inner{
+      height: 300px;
+      background: pink;
+      margin: 0 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="middle">
+      <div class="middle-inner">
+        中间
+        方案二：
+
+        采用负边距处理。左中右都float：left;
+
+        中间的div里边再设置一个div ,外层div占满 width:100%; 内层div使用margin-left 和margin-right
+
+        左边加上负边距 margin-left:-100% 拉回最左端
+
+        右边加上负边距 margin-left:-220px (即为右边的宽度)拉回最右端
+      </div>
+    </div>
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+  </div>
+</body>
+</html>

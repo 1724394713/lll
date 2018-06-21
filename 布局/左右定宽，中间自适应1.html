@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右定宽，中间自适应</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      min-width: 700px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .left{
+      width: 200px;
+      height: 300px;
+      background: paleturquoise;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .right{
+      width: 200px;
+      height: 300px;
+      background: paleturquoise;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .middle{
+      height: 300px;
+      background: pink;
+      margin: 0 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="middle">
+      中间
+      方案一：
+
+      左右设置绝对定位，定宽，中间设置margin-left  margin-right
+    </div>
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+  </div>
+</body>
+</html>
